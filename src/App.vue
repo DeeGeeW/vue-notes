@@ -1,13 +1,6 @@
-<template>
-  <div id="app">
-    <NoteToolbar />
-    <NoteContainer />
-  </div>
-</template>
-
 <script>
-import NoteToolbar from "./views/NoteToolbar.vue";
-import NoteContainer from "./views/NoteContainer.vue";
+import NoteToolbar from "./components/NoteToolbar";
+import NoteContainer from "./components/NoteContainer";
 
 export default {
   components: {
@@ -19,6 +12,13 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div id="app">
+    <NoteToolbar />
+    <NoteContainer />
+  </div>
+</template>
 
 <style>
 /* RESET */
